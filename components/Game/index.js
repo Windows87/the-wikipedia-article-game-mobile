@@ -97,8 +97,8 @@ class Game extends Component {
 
   onGameOver = () => {
     this.setState({ gameOver: false });
-    this.newRound();
     this.props.onGameOver();
+    this.newRound();
   }
 
   newRound = () => {
@@ -128,8 +128,10 @@ class Game extends Component {
     this.setState({ showViews: true });
 
     setTimeout(() => {
-      if(articles[0].views !== articlesViews[0]) {
-        if(articles[0].views - articlesViews[0] >= 100) {
+      if(articles[0].views > articlesViews[0]) {
+        if(articles[0].views - articlesViews[0] >= 1000) {
+          articlesViews[0] += 1000;
+        } else if (articles[0].views - articlesViews[0] >= 100) {
           articlesViews[0] += 100;
         } else if (articles[0].views - articlesViews[0] >= 10) {
           articlesViews[0]+= 10;
@@ -138,8 +140,10 @@ class Game extends Component {
         }
       }
 
-      if(articles[1].views !== articlesViews[1]) {
-        if(articles[1].views - articlesViews[1] >= 100) {
+      if(articles[1].views > articlesViews[1]) {
+        if(articles[1].views - articlesViews[1] >= 1000) {
+          articlesViews[1] += 1000;
+        } else if (articles[1].views - articlesViews[1] >= 100) {
           articlesViews[1] += 100;
         } else if (articles[1].views - articlesViews[1] >= 10) {
           articlesViews[1]+= 10;
