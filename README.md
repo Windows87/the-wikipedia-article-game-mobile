@@ -1,5 +1,5 @@
 # The Wikipedia Article Game Mobile
-Wikipedia game that you need hit which is most viewed by its photos and names. Made with React Native. It's the <a href="https://windows87.github.io/the-wikipedia-article-game/">The Wikipedia Article Game</a> mobile version.
+Wikipedia game that you need hit which is most viewed by its photos and names. Made with React Native. It's the <a href="https://windows87.github.io/the-wikipedia-article-game/">The Wikipedia Article Game</a> mobile version. You can download in Play Store <a href="https://play.google.com/store/apps/details?id=com.thewikipediaarticlegamemobile">Clicking Here</a>.
 
 ## Screnshoots
 <div>
